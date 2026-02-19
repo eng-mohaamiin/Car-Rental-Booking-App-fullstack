@@ -36,11 +36,16 @@ app.use(
 );
 
 
+
 // routes
 app.use("/api/user", router);
 app.use("/api/owner", ownerRouter);
 app.use("/api/bookings", bookingRouter);
 
+
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
 // start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

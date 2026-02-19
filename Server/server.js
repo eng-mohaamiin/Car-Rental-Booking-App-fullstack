@@ -30,10 +30,11 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // frontend
-    credentials: true,               // ✅ muhiim si cookies loo diro
+    origin: ["http://localhost:5173", "https://car-rental-booking-app-fullstack-g2.vercel.app"],
+    credentials: true,
   })
 );
+
 
 
 

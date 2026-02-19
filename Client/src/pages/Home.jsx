@@ -1,0 +1,18 @@
+import React from "react";
+import Hero from "../Components/Hero";
+import FeaturedSection from "../Components/FeaturedSection";
+import Banner from "../Components/Banner";
+import Testimonial from "../Components/Testimonial";
+
+const Home = () => {
+  return (
+    <>
+      <Hero />
+      <FeaturedSection />
+      <Banner />
+      <Testimonial />
+    </>
+  );
+};
+
+export default Home;
